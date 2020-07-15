@@ -2,8 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { unregister } from './core';
 
+import { GlobalStyles } from './styles';
+
 ReactDOM.render(
-  <React.StrictMode>Hello world</React.StrictMode>,
+  <React.StrictMode>
+    <GlobalStyles />
+    Hello world
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
