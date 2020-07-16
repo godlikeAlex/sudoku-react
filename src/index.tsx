@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { unregister } from './core';
+import { Content, Title } from './components';
 
 import { GlobalStyles, theme } from './styles';
 import { ThemeProvider } from 'styled-components';
@@ -9,7 +10,9 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      Hello world
+      <Content>
+        <Title>Sudoku</Title>
+      </Content>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
