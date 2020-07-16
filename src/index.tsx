@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { unregister } from './core';
-import { Content, Title, Card } from './components';
+import { Content, Title, Card, Grid } from './components';
 
 import { GlobalStyles, theme } from './styles';
 import { ThemeProvider } from 'styled-components';
@@ -12,7 +12,9 @@ ReactDOM.render(
       <GlobalStyles />
       <Content data-cy="content">
         <Title data-cy="title">Sudoku</Title>
-        <Card data-cy="card">This is work in progress</Card>
+        <Card data-cy="card">
+          <Grid />
+        </Card>
       </Content>
     </ThemeProvider>
   </React.StrictMode>,
