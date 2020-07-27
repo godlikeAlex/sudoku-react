@@ -1,8 +1,23 @@
 import React, { FC } from 'react';
 import { Container, Row } from './styles';
 import Block from './block';
+import { fillGrid } from 'utils';
+import { Grid as GridT } from 'typings';
 
 const Grid: FC = () => {
+  const grid: GridT = [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  ];
+  fillGrid(grid);
+  console.log(grid);
   return (
     <Container data-cy="grid-container">
       {React.Children.toArray(

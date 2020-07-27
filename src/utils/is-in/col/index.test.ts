@@ -1,6 +1,5 @@
 import isInCol from './';
 import { Grid } from 'typings';
-import { exception } from 'console';
 
 describe('isInCol', () => {
   it('it returns true when value is in grid column', () => {
